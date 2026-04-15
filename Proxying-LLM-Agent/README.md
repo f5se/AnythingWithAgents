@@ -173,7 +173,7 @@ https://github.com/user-attachments/assets/85fa21af-6c28-492c-915b-4135106e78fc
 
 ### Demo 2: Blocking Certain Tools for Agents
 
-https://github.com/user-attachments/assets/f83052ba-4059-415e-b835-894fe2a40ea3
+https://github.com/user-attachments/assets/3cb16ce4-aa0d-4a40-89c2-19d0472e6428
 
 ## Setup
 
