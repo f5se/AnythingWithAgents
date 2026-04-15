@@ -132,6 +132,50 @@ graph RL
     linkStyle 14 stroke:#22c55e,stroke-width:2px
 ```
 
+### Background: OpenAI API example
+
+```
+{
+  "model": "gpt-4o-mini",
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are a helpful assistant that can call tools."
+    },
+    {
+      "role": "user",
+      "content": "What's the weather in Singapore today?"
+    }
+  ],
+  "tools": [
+    {
+      "type": "function",
+      "function": {
+        "name": "get_weather",
+        "description": "Get current weather by city name",
+        "parameters": {
+          "type": "object",
+          "properties": {
+            "city": {
+              "type": "string",
+              "description": "City name"
+            },
+            "unit": {
+              "type": "string",
+              "enum": ["celsius", "fahrenheit"]
+            }
+          },
+          "required": ["city"]
+        }
+      }
+    }
+  ],
+  "tool_choice": "auto",
+  "temperature": 0.7,
+  "stream": false
+}
+```
+
 ### System Prompts Wrapper
 
 - ${nonce}: random string generated from iRule per session;
